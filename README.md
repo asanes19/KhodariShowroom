@@ -15,14 +15,14 @@
     <img src="Readme/whitelogo.png" alt="Logo" width="210" height="180">
   </a>
 
-  <h3 align="center">Sane Book Shop</h3>
+  <h3 align="center">Khodari used cars showroom</h3>
 
   <p align="center">
-My First Year College Project - Sample Website
+Real life project - Web Application
     <br />
-    <a href="https://github.com/asanes19/FalconIsland"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/asanes19/KhodariShowroom"><strong>Explore the docs »</strong></a>
     <br />
-    <a href="https://asanes19.github.io/FalconIsland/">View Demo</a>
+    <a href="http://khodari.infinityfreeapp.com/">View Demo</a>
   </p>
 </div>
 
