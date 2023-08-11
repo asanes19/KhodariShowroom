@@ -1,0 +1,612 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&display=swap");
+
+/*===============  MY CUSTOM CSS ===============*/
+
+:root {
+    --header-height: 3.5rem;
+
+    /*========== My Custom Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --first-color: hsl(0, 100%, 29%);
+    --first-color-alt: hsl(219, 69%, 52%);
+    --title-color: hsl(0, 0%, 0%);
+    --text-color: hsl(0, 0%, 0%);
+    --text-color-light: hsl(0, 0%, 0%);
+    --clr-neon: #9f0101f0;
+    --white-color: #000000;
+    /* --body-color: hsl(219, 4%, 4%); */
+
+    --body-color: #f9f9f9;
+    --container-color: hsl(219, 4%, 7%);
+
+    /*========== My Custom Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Exo", sans-serif;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
+
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+
+    /*========== gradients ==========*/
+    --gradients: linear-gradient(45deg, #ffffff, #f9f9f9, #f0f0f0, rgb(209, 209, 209));
+}
+
+@media screen and (min-width: 968px) {
+    :root {
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: 0.875rem;
+        --smaller-font-size: 0.813rem;
+    }
+}
+
+/*=============== BASE CSS ===============*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+    font-family: "El Messiri", sans-serif;
+    background-color: #f8f9fa;
+}
+
+h1,
+h2,
+h3 {
+    color: black;
+    font-weight: var(--font-semi-bold);
+}
+
+ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1024px;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section {
+    padding: 4.5rem 0 2rem;
+}
+
+.section__title {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.main {
+    overflow: hidden;
+}
+
+/*=============== BUTTON ===============*/
+.button {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    padding: 0.5rem 2rem;
+    border-radius: 0.25rem;
+    font-size: var(--normal-font-size);
+    transition: 0.3s;
+}
+.button:hover {
+    background-color: var(--first-color-alt);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 395px) {
+}
+
+/* For medium devices */
+@media screen and (min-width: 767px) {
+}
+
+/* For large devices */
+
+@media screen and (min-width: 1040px) {
+}
+
+.sayed {
+    pointer-events: none;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(0deg, rgb(0, 0, 0) 10%, rgba(0, 212, 255, 0) 100%);
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease forwards;
+}
+
+.fade-out {
+    opacity: 1;
+    animation: fade-out 2s linear forwards;
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.logIn {
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("../img/background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-section {
+    position: absolute;
+    top: 265px;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid #9f0101f0;
+}
+
+.login-box h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: end;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border: 2px solid #9f0101f0;
+}
+
+.carBtn button {
+    background-color: #fff;
+    color: #9f0101f0;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 130px;
+    border: 2px solid #9f0101f0;
+    transition: background-color 0.3s ease; /* Add transition here */
+}
+
+.carBtn button:hover {
+    background-color: #9f0101f0;
+    color: #fff;
+}
+
+.brand-container {
+    position: absolute;
+    top: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.brand-container h1 {
+    font-size: 54px;
+    color: white;
+    margin: 10px;
+}
+
+.brand-container img {
+    max-width: 300px;
+    height: auto;
+    margin: 20px;
+}
+
+.chooseTheShowroom {
+    background-image: url("../img/background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.the3Showrooms {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.showroom {
+    width: 33.3%;
+    margin: 15px;
+}
+
+.showrooms {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+}
+
+.showroom {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.showroomImg:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.showroomImg {
+    border: 2px solid #9f0101f0;
+    border-radius: 10px;
+    width: 100%;
+    transition: transform 0.2s ease;
+}
+
+/* Styling for the sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.sidebar-showroom {
+    height: 50px;
+    background-color: #9f0101f0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.sidebar-showroom img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.sidebar-showroom h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Add styles for the sidebar functions list */
+.sidebar-functions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-functions li {
+    margin-bottom: 10px;
+    text-align: end;
+}
+
+.sidebar-functions a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-functions i {
+    margin-left: 10px;
+}
+
+.sidebar-functions a:hover {
+    background-color: #9f0101f0;
+    color: #fff;
+}
+
+.sidebar-logout {
+    margin-top: auto;
+}
+
+.sidebar-logout div {
+    margin-bottom: 10px;
+}
+
+.sidebar-logout a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-logout i {
+    margin-left: 10px;
+}
+
+/* CSS to adjust the width of the main content area */
+.mainCont {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 260px 10px 10px;}
+
+/* CSS to make miniConts appear beside each other */
+.threeConts {
+    display: flex;
+}
+
+.miniCont {
+    color: var(--clr-neon);
+    border-radius: 10px;
+    border: 2px solid var(--clr-neon);
+    flex: 1;
+    height: 200px;
+    width: calc(33.33% - 10px); /* Each miniCont takes 1/3 of the available space with margin */
+    background-color: #f2f2f2;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.miniCont i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.miniCont:hover {
+    background-color: #ccc;
+}
+/* CSS to make the mainBanner appear below miniConts */
+.mainBanner {
+    width: 100%;
+    height: calc(100vh - 210px - 40px); /* 100vh minus height of miniConts and margin */
+    /* margin-top: 20px; */
+}
+.mainBanner img{
+    border-radius: 10px;
+}
+
+
+
+/* Add these styles to your existing stylesheet or create a new one */
+
+/* Styling for the table container */
+.table-container {
+    margin: 10px 260px 10px 10px;  
+    background-color: #fff; /* Set background color to white */
+    padding: 20px; /* Add padding around the table */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to the container */
+}
+
+/* Styling for the users list table */
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.users-table th,
+.users-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.users-table th {
+    background-color: #f2f2f2;
+}
+
+.users-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.users-table tbody tr:hover {
+    background-color: #ddd;
+}
+
+.tableHeader{
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+    border-bottom: 1px solid #0000001a;
+    padding-bottom: 20px;
+}
+
+.myBtn {
+    background-color: #fff;
+    color: #9f0101f0;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 200px;
+    border: 2px solid #9f0101f0;
+    transition: background-color 0.3s ease; /* Add transition here */
+}
+
+.myBtn:hover {
+    background-color: #9f0101f0;
+    color: #fff;
+}
+
+.form-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    width: 45%;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+
+
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: end;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.section{
+    margin: 10px 260px 10px 10px;
+}
+
+.form-row {
+    flex-direction: row-reverse;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.form-row .form-group {
+    width: calc(50% - 10px); /* Adjust the width as needed, subtract the margin */
+    margin-bottom: 10px;
+}
+
+.user-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group button{
+    display: flex;
+    align-items: end;
+}
+
+
+
+.form-group {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.form-group:last-child {
+    margin-right: 0;
+}
+
+.alink{
+    color: var(--clr-neon);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
