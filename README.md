@@ -61,7 +61,7 @@ Real life project - Web Application
 
 <p align="center">
   <a href="https://github.com/asanes19">
-    <img src="Readme/demo.mp4" alt="Logo" width="800" height="400">
+    <video src="Readme/demo.mp4" alt="Logo" width="800" height="400">
   </a>
 </p>
 
