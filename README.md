@@ -61,7 +61,7 @@ Real life project - Web Application
 
 <p align="center">
   <a href="https://github.com/asanes19">
-    <video src="https://github.com/asanes19/KhodariShowroom/assets/140919140/0d55a56b-c792-4c35-97f6-ebc90cd84ee0" alt="Logo" width="
+    <video src="Readme/ec84ada8-2593-458e-95be-9b0cb9b69dc0.mp4" alt="Logo" width="
 
   </a>
 </p>
