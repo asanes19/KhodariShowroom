@@ -23,50 +23,21 @@ Real life project - Web Application
     <a href="https://github.com/asanes19/KhodariShowroom"><strong>Explore the docs »</strong></a>
     <br />
     <a href="http://khodari.infinityfreeapp.com/">View Demo</a>
+    <a href="https://dreamy-fox-1e6c6c.netlify.app/">Video Demo</a>
   </p>
 </div>
-
-
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
-
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
 <p align="center">
   <a href="https://github.com/asanes19">
-    <video src="Readme/ec84ada8-2593-458e-95be-9b0cb9b69dc0.mp4" alt="Logo" width="
-
+    <img src="Readme/clint.jpg" alt="Clint" width="400" height="300">
+    <img src="Readme/admin.jpg" alt="Admin" width="400" height="300">
   </a>
 </p>
 
-Welcome to the Falcon Island project! This repository contains information and resources related to our townhouse development. If you're interested in modern and attractive townhouses with stunning views, you're in the right place.
+The Khodari Used Cars Showroom Web App provides users with easy access to information about three showroom branches: Nohamed, Ahmed, and Haeean. Users can explore car inventory, view details about available cars, and connect with showroom locations and social media. The application also offers an admin panel for staff to manage inventory, dealers, and users, ensuring efficient content management. With a user-friendly interface and comprehensive features, the app bridges the gap between potential buyers and the Khodari showroom, enhancing the car browsing experience.
 
 
 
@@ -76,36 +47,37 @@ Welcome to the Falcon Island project! This repository contains information and r
 <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">
 <img src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white">
 <img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white">
-<img src="https://img.shields.io/badge/Scss%20-%231572B6.svg?&style=for-the-badge&logo=scss&logoColor=white">
-</p>
+  <img src="https://img.shields.io/static/v1?style=for-the-badge&message=PHP&color=777BB4&logo=PHP&logoColor=FFFFFF&label=">
+  <img src="https://img.shields.io/badge/bootstrap%20-%23563D7C.svg?&style=for-the-badge&logo=bootstrap&logoColor=white">
+<img src="https://img.shields.io/static/v1?style=for-the-badge&amp;message=SwiperJS&amp;color=6332F6&amp;logo=Swiper&amp;logoColor=FFFFFF&amp;label=">
+<img alt="MySQL" src="https://img.shields.io/badge/MySQL-%2300f.svg?style=for-the-badge&logo=MySQL&logoColor=white">
+
+## Welcome to the Khodari Used Cars Showroom Web App README
+
+Welcome to the Khodari Used Cars Showroom Web App repository! This GitHub project hosts the code and assets for our innovative web application designed exclusively for Khodari Used Cars Showroom. Here's a comprehensive overview of what our web app offers:
+
+## Client Panel: Explore Our Showrooms
+Our web app offers users a seamless gateway to all three branches of Khodari Used Cars Showroom: Nohamed, Ahmed, and Haeean. Users can effortlessly access detailed information about each showroom, including contact numbers, addresses, social media links, and a comprehensive listing of available cars. From luxurious sedans to rugged SUVs, our web app provides an extensive view of the diverse range of vehicles we offer.
+
+## Interactive Maps: Locate with Ease
+Discover the precise locations of our showrooms using interactive maps. Seamlessly integrated with each showroom's details, these maps provide step-by-step directions, making it a breeze to find the nearest showroom. Whether you're exploring on foot or by car, our interactive maps ensure you never miss a turn.
+
+## Admin Panel: Streamlined Management
+Our robust admin panel empowers staff members with the ability to enhance and manage the web app's content. Add new cars to the inventory, showcase special deals, manage dealers' information, and efficiently oversee user accounts. Our intuitive interface simplifies the process, allowing staff to focus on delivering the best experience to our users.
+
+## Responsive Design: Anytime, Anywhere
+Experience our web app seamlessly across various devices. Whether you're browsing on a desktop, tablet, or mobile phone, our responsive design ensures optimal performance and usability. Browse through our inventory while on the go, and easily reach out to our showrooms for further inquiries.
+
+## Feedback and Support: Reach Out
+Have questions or feedback? Our dedicated support team is here to help. Utilize the provided contact information to connect with us directly. We value your input and strive to provide exceptional customer service at every step.
+
+We invite you to explore the Khodari Used Cars Showroom Web App to uncover a world of automotive excellence. For the latest updates and to dive deeper into our offerings, please visit our website. Experience the convenience, variety, and quality that define Khodari's commitment to delivering exceptional used cars and outstanding service.
 
 
-# Falcon Island Website README
 
-Welcome to the Falcon Island Website repository! This GitHub project hosts the code and assets for our Falcon Island project landing page. Here's an overview of what you'll find in each section of the website:
 
-## More Information About The Townhouses
-In this section, you can find detailed information about the luxurious townhouses available at Falcon Island. Discover the unique features, architectural design, and amenities that make these townhouses a perfect choice for modern living.
 
-## Discover The Most Attractive Views
-Experience the breathtaking views that Falcon Island has to offer. In this section, we showcase the stunning vistas and surroundings that residents can enjoy from their townhouses. Get a glimpse of the natural beauty and urban landscapes that define Falcon Island's appeal.
 
-## Masterplan
-Explore the masterplan that lays out the community's layout and design. Learn about the arrangement of townhouses, green spaces, communal areas, and the thoughtful planning that fosters a sense of belonging and well-being among Falcon Island residents.
-
-## Video Tour
-Immerse yourself in Falcon Island through our captivating video tour. This section provides an engaging visual journey, highlighting the townhouses, common areas, and the overall ambiance of the community. Experience the essence of Falcon Island from the comfort of your screen.
-
-## Floor Plans & 3D Tour
-Browse a variety of floor plans to envision your future home on Falcon Island. Our interactive 3D tours offer an immersive virtual experience, allowing you to navigate through different townhouse layouts and get a feel for the space and design.
-
-## Don't Hesitate To Contact Us
-Got questions or ready to explore further? Reach out to our dedicated team for assistance. Whether you're interested in scheduling a site visit, obtaining more details about the townhouses, or have general inquiries, this section provides the necessary contact information to get in touch.
-
-We invite you to explore the various sections of our Falcon Island website to get a comprehensive understanding of this exciting project. For the latest updates and more detailed information.
-
----
- 
  
 
 <h3> 🙋‍♀️ Let's Connect </h3>
