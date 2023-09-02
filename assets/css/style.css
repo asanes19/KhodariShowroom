@@ -806,8 +806,9 @@ justify-content: center;
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(0deg, rgb(0, 0, 0) 10%, rgba(0, 212, 255, 0) 100%);
-    z-index: 1;
+    background: rgb(255,0,0);
+    background: radial-gradient(circle, rgba(255,0,0,0) 0%, rgba(0,0,0,1) 100%);
+        z-index: 1;
 }
 
 .sellstypes {
@@ -1545,4 +1546,8 @@ margin: 0;
     font-size: 25px;
     cursor: pointer;
 
+}
+
+.sliderVideo{
+    width: 100%;
 }
